@@ -1,0 +1,44 @@
+{
+    "overall_statistics": {
+        "processing_time": "17.92 seconds",
+        "total_users_found": 120,
+        "total_users_filtered": 12
+    },
+    "users": [
+        {
+            "username": "usmarkets_daily",
+            "displayname": "US Markets Daily",
+            "followersCount": 10500,
+            "url": "https://twitter.com/usmarkets_daily",
+            "avg_posts_per_week": 6.0
+        },
+        {
+            "username": "econ_trader",
+            "displayname": "Econ Trader",
+            "followersCount": 8900,
+            "url": "https://twitter.com/econ_trader",
+            "avg_posts_per_week": 4.2
+        },
+        {
+            "username": "invest_alerts",
+            "displayname": "Invest Alerts",
+            "followersCount": 15000,
+            "url": "https://twitter.com/invest_alerts",
+            "avg_posts_per_week": 5.5
+        },
+        {
+            "username": "market_trends_ai",
+            "displayname": "Market Trends AI",
+            "followersCount": 7600,
+            "url": "https://twitter.com/market_trends_ai",
+            "avg_posts_per_week": 3.7
+        },
+        {
+            "username": "crypto_watch_us",
+            "displayname": "Crypto Watch US",
+            "followersCount": 13200,
+            "url": "https://twitter.com/crypto_watch_us",
+            "avg_posts_per_week": 7.1
+        }
+    ]
+}

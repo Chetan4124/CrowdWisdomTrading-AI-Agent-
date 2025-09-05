@@ -7,25 +7,22 @@ from textwrap import dedent
 
 load_dotenv()
 
-# Configure your LLM
-# You can use any model supported by LiteLLM (e.g., "gpt-4", "claude-3-opus", "gemini/gemini-pro")
-# Make sure you have the corresponding API key set in your .env file
+
 llm_model = os.getenv("LITELLM_MODEL", "gpt-4")
 
-# Define Agents
 class FinancialContentCrew:
     def __init__(self):
         self.llm_config = {"model": llm_model}
 
     def run(self):
-        # Define agents
+
         keyword_generator = Agent(
             role='Keyword Generator',
             goal='Generate relevant keywords for searching X (Twitter) creators focused on US financial markets.',
             backstory='An expert in financial news and social media trends, capable of identifying key terms and phrases related to the US stock market, economy, and investment strategies.',
             verbose=True,
-            allow_delegation=True, # Allow delegation to other agents
-            llm=self.llm_config, # Use litellm configured LLM
+            allow_delegation=True, 
+            llm=self.llm_config, 
         )
 
         user_search_agent = Agent(
@@ -47,7 +44,7 @@ class FinancialContentCrew:
             llm=self.llm_config,
         )
 
-        # Define tasks
+        
         generate_keywords_task = Task(
             description='Generate a comprehensive list of search keywords related to US financial markets, including terms for stocks, bonds, commodities, cryptocurrencies, economic indicators, investment strategies, and popular financial news topics. Focus on terms that active X (Twitter) creators would use.',
             agent=keyword_generator,
